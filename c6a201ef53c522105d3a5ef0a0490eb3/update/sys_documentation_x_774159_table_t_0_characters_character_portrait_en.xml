@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="character_portrait" label="Character Portrait" language="en" table="x_774159_table_t_0_characters">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>character_portrait</element>
+            <help/>
+            <hint/>
+            <label>Character Portrait</label>
+            <language>en</language>
+            <name>x_774159_table_t_0_characters</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-05-12 00:55:07</sys_created_on>
+            <sys_id>c257cb0853e1ea105d3a5ef0a0490eca</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_name>Character Portrait</sys_name>
+            <sys_package display_value="Table Top Tools" source="x_774159_table_t_0">c6a201ef53c522105d3a5ef0a0490eb3</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Table Top Tools">c6a201ef53c522105d3a5ef0a0490eb3</sys_scope>
+            <sys_update_name>sys_documentation_x_774159_table_t_0_characters_character_portrait_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-05-12 00:55:08</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="editcharflag" label="EditCharFlag" language="en" table="x_774159_table_t_0_characters">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>editcharflag</element>
+            <help/>
+            <hint/>
+            <label>EditCharFlag</label>
+            <language>en</language>
+            <name>x_774159_table_t_0_characters</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-04-30 02:32:44</sys_created_on>
+            <sys_id>cb9ae19c53d526105d3a5ef0a0490e9b</sys_id>
+            <sys_mod_count>7</sys_mod_count>
+            <sys_name>EditCharFlag</sys_name>
+            <sys_package display_value="Table Top Tools" source="x_774159_table_t_0">c6a201ef53c522105d3a5ef0a0490eb3</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Table Top Tools">c6a201ef53c522105d3a5ef0a0490eb3</sys_scope>
+            <sys_update_name>sys_documentation_x_774159_table_t_0_characters_editcharflag_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-04-30 02:58:31</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

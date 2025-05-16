@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_774159_table_t_0.TableTopUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>TableTopUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var TableTopUtils = Class.create();
+TableTopUtils.prototype = {
+    initialize: function() {
+        this.chrTbl = Constants.CHARACTER_TABLE;
+    },
+    createConfig: function(payload) {
+        if (typeof payload != 'object') {
+            return 'Payload is not an object, please review';
+        } else {
+            //var parsed = JSON.parse(payload);
+            for (key in payload) {
+                if (payload.hasOwnProperty(key)) {
+                    var configGr = new GlideRecord('x_774159_table_t_0_resource_configs');
+                    configGr.initialize();
+                    configGr.description = 'Resource for ' + key;
+                    configGr.resource_link = payload[key];
+                    configGr.resource_method = 'GET';
+                    configGr.master_resource = false;
+                    configGr.insert();
+                }
+            }
+        }
+    },
+    buildLanguageList: function(payload, config) {
+        if (typeof payload != 'object') {
+            var parsed = JSON.parse(payload);
+            var results = parsed.results || []; // <-- safer
+            for (var i = 0; i < results.length; i++) {
+                var language = results[i];
+
+                var langGr = new GlideRecord('x_774159_table_t_0_languages');
+                langGr.initialize();
+                langGr.language_name = language.name;
+                langGr.index = language.index;
+                langGr.url = language.url;
+                langGr.resource_config = config;
+                langGr.insert();
+            }
+            return 200;
+        } else {
+            var results = payload.results || []; // <-- safer
+            for (var i = 0; i < results.length; i++) {
+                var language = results[i];
+
+                var langGr = new GlideRecord('x_774159_table_t_0_languages');
+                langGr.initialize();
+                langGr.language_name = language.name;
+                langGr.index = language.index;
+                langGr.url = language.url;
+                langGr.resource_config = config;
+                langGr.insert();
+            }
+            return 200;
+        }
+
+    },
+    generateCharacterSheet: function(recordSysId) {
+        var x = this.getAttachment(recordSysId);
+        var y = this.buildDocumentMap(x);
+        gs.info('Document Map: ' + JSON.parse(y));
+        var z = this.buildCSMap(recordSysId);
+        gs.info('Character Sheet Map: ' + JSON.parse(z));
+        var fldMap = this.buildFieldMap(JSON.parse(y), JSON.parse(z));
+        gs.info('Field Map: ' + JSON.stringify(fldMap, null, 2));
+        var chrName = this.getCharacterName(recordSysId);
+        var chrSheet = this.fillPDF(fldMap, x, this.chrTbl, recordSysId, chrName);
+        return chrSheet;
+    },
+    generateStats: function(recordSysId) {
+        try {
+            var statusObj = {};
+            var statFields = ['strength', 'constitution', 'charisma', 'wisdom', 'dexterity', 'intelligence'];
+
+            var statValues = [];
+            for (var i = 0; i < statFields.length; i++) {
+                var randStat = this._randomInt(1, 18);
+                statValues.push(randStat);
+            }
+
+            var hp = this._randomInt(1, 100);
+
+            var gr = new GlideRecord(this.chrTbl);
+            if (gr.get(recordSysId)) {
+                for (var j = 0; j < statFields.length; j++) {
+                    gs.info("Line 68: " + statFields[j]);
+                    gr.setValue(statFields[j], statValues[j]);
+
+                }
+                gr.setValue('hit_points', hp);
+                gr.update();
+
+                statusObj = {
+                    status: 200,
+                    message: "Stats successfully generated"
+                };
+            } else {
+                statusObj = {
+                    status: 400,
+                    message: "No valid record passed"
+                };
+            }
+
+            return statusObj;
+        } catch (ex) {
+            var message = ex.message;
+            statusObj = {
+                status: 500,
+                message: message
+            };
+            return statusObj;
+        }
+    },
+    _randomInt: function(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+
+    },
+    fillPDF: function(fieldMap, attachId, tblName, tblRecId, pdfName) {
+        var style = sn_pdfgeneratorutils.Style();
+        style.setBold();
+        style.setFontSize(48);
+        var cs = new sn_pdfgeneratorutils.PDFGenerationAPI;
+        var result = cs.fillDocumentFields(fieldMap, attachId, tblName, tblRecId, pdfName);
+        return JSON.stringify(result);
+    },
+
+    getAttachment: function(recordSysId) {
+        var attachId;
+        var gr = new GlideRecord('sys_attachment');
+        gr.addQuery('table_sys_id', recordSysId);
+        gr.query();
+        if (gr.next()) {
+            attachId = gr.getValue('sys_id');
+        }
+        return attachId;
+    },
+    getCharacterName: function(recordSysId) {
+
+        var gr = new GlideRecord('x_774159_table_t_0_characters');
+        if (gr.get(recordSysId)) {
+            return gr.character_name;
+        }
+    },
+
+    buildDocumentMap: function(attachId) {
+        var x = new sn_pdfgeneratorutils.PDFGenerationAPI();
+        var result = x.getDocumentFields(attachId);
+
+        if (!result || !Array.isArray(result.fields)) {
+            gs.error("Failed to retrieve document fields for attachment: " + attachId);
+            return JSON.stringify([]);
+        }
+
+        return JSON.stringify(result.fields);
+    },
+
+    buildCSMap: function(recordSysId) {
+        var fvMap = [];
+        var fnMap = ['backstory', 'strength', 'constitution', 'charisma', 'character_name', 'wisdom', 'dexterity', 'intelligence', 'alignment', 'character_class', 'hit_points'];
+        var gr = new GlideRecord('x_774159_table_t_0_characters');
+        if (gr.get(recordSysId)) {
+            for (var i = 0; i < fnMap.length; i++) {
+                fvMap.push(gr.getValue(fnMap[i]));
+            }
+            return JSON.stringify(fvMap);
+        }
+    },
+
+    buildFieldMap: function(docMap, valMap) {
+
+        var fieldMap = {};
+        var length = Math.min(docMap.length, valMap.length); // Ensure no out-of-bounds errors
+
+        for (var i = 0; i < length; i++) {
+            fieldMap[docMap[i].toString()] = valMap[i].toString();
+        }
+
+        return fieldMap; // Return the object directly
+    },
+
+    generate: function(sysId) {
+        var tbl = 'x_774159_table_t_0_characters';
+        var view = 'Default view';
+
+        var layoutArr = this._getLayoutFields(tbl, view);
+        var hdrLabels = this._getFieldLabels(tbl, layoutArr);
+        var colWidth = hdrLabels.map(() => 70); // Fixed width for each column
+
+        var gr = new GlideRecord(tbl);
+        if (!gr.get(sysId)) {
+            gs.error("Record not found with sys_id: " + sysId);
+            return;
+        }
+
+        var pageSize = new sn_pdfgeneratorutils.PdfPage("Letter", "Portrait");
+        var document = new sn_pdfgeneratorutils.Document.createDocument(pageSize);
+
+        this._addHeader(document, gr);
+        this._addDetailsTable(document, gr, layoutArr, hdrLabels, colWidth);
+		this._buildVerticalSpacer(document,50);
+        this._addFooter(document);
+
+        document.saveAsAttachment(tbl, sysId, 'CharacterProfile3.pdf');
+    },
+
+    /**
+     * Returns array of field names shown in the list layout for a table and view.
+     */
+    _getLayoutFields: function(tableName, viewName) {
+        var viewId = '';
+        var listId = '';
+        var layoutArr = [];
+
+        var viewGr = new GlideRecord('sys_ui_view');
+        viewGr.addQuery('title', viewName);
+        viewGr.query();
+        if (viewGr.next()) viewId = viewGr.getValue('sys_id');
+
+        var listGr = new GlideRecord('sys_ui_list');
+        listGr.addQuery('view', viewId);
+        listGr.addQuery('name', tableName);
+        listGr.query();
+        if (listGr.next()) listId = listGr.getValue('sys_id');
+
+        var elementGr = new GlideRecord('sys_ui_list_element');
+        elementGr.addQuery('list_id', listId);
+        elementGr.orderBy('position');
+        elementGr.query();
+        while (elementGr.next()) {
+            layoutArr.push(elementGr.getValue('element'));
+        }
+
+        return layoutArr;
+    },
+
+    /**
+     * Maps field names to their labels from the dictionary.
+     */
+    _getFieldLabels: function(tableName, fieldNames) {
+        var labelMap = {};
+        var labels = [];
+
+        var dictGr = new GlideRecord('sys_dictionary');
+        dictGr.addQuery('name', tableName);
+        dictGr.addQuery('element', 'IN', fieldNames);
+        dictGr.query();
+        while (dictGr.next()) {
+            labelMap[dictGr.getValue('element')] = dictGr.getValue('column_label');
+        }
+
+        for (var i = 0; i < fieldNames.length; i++) {
+            labels.push(labelMap[fieldNames[i]] || fieldNames[i]);
+        }
+
+        return labels;
+    },
+
+    /**
+     * Adds the character portrait and backstory to the document.
+     */
+    _addHeader: function(document, gr) {
+        var black = new sn_pdfgeneratorutils.Color([0, 0, 0]);
+        var white = new sn_pdfgeneratorutils.Color([1, 1, 1]);
+
+        var mainTbl = new sn_pdfgeneratorutils.Table(true, [140, 420], false);
+
+        var image = new sn_pdfgeneratorutils.Image('258f4f805325ea105d3a5ef0a0490ea'); // Left-side image
+        image.setAutoScale(true);
+        image.setColoredBorder(black, 5);
+
+        var imgCell = new sn_pdfgeneratorutils.Cell();
+        imgCell.addImage(image);
+        imgCell.setBorder(0)
+		imgCell.setPadding(0);
+
+        var nestedTable = new sn_pdfgeneratorutils.Table(true, [420], false);
+
+        var headerStyle = new sn_pdfgeneratorutils.Style();
+        headerStyle.setFontSize(14)
+		headerStyle.setBold();
+		headerStyle.setBackgroundColor(black);
+		headerStyle.setFontColor(white);
+		headerStyle.setTextAlignment("text-center");
+
+        var headerParagraph = new sn_pdfgeneratorutils.Paragraph("Back Story");
+        headerParagraph.addStyle(headerStyle);
+
+        var headerCell = new sn_pdfgeneratorutils.Cell();
+        headerCell.addParagraph(headerParagraph)
+		headerCell.setBorder(0);
+		headerCell.setPadding(0);
+
+        var contentStyle = new sn_pdfgeneratorutils.Style();
+        contentStyle.setFontSize(10);
+
+        var contentParagraph = new sn_pdfgeneratorutils.Paragraph(gr.getValue('backstory') || '');
+        contentParagraph.addStyle(contentStyle);
+
+        var contentCell = new sn_pdfgeneratorutils.Cell();
+        contentCell.addParagraph(contentParagraph);
+		contentCell.setBorder(0);
+		contentCell.setPadding(1);
+
+        nestedTable.addCell(headerCell);
+        nestedTable.addCell(contentCell);
+
+        var nestedTableCell = new sn_pdfgeneratorutils.Cell();
+        nestedTableCell.addTable(nestedTable);
+		nestedTableCell.setBorder(0);
+		nestedTableCell.setPadding(0);
+
+        mainTbl.addCell(imgCell);
+        mainTbl.addCell(nestedTableCell);
+        document.addTable(mainTbl);
+    },
+
+    /**
+     * Adds a field-by-field data table to the document.
+     */
+    _addDetailsTable: function(document, gr, layoutArr, hdrLabels, colWidth) {
+        var black = new sn_pdfgeneratorutils.Color([0, 0, 0]);
+        var white = new sn_pdfgeneratorutils.Color([1, 1, 1]);
+
+        var table = new sn_pdfgeneratorutils.Table(true, colWidth, false);
+
+        var headerStyle = new sn_pdfgeneratorutils.Style();
+        headerStyle.setBackgroundColor(black);
+		headerStyle.setTextAlignment("text-center");
+		headerStyle.setBold();
+		headerStyle.setFontColor(white);
+		headerStyle.setFontSize(10);
+        table.setHeaderStyle(headerStyle);
+
+        var dataStyle = new sn_pdfgeneratorutils.Style();
+        dataStyle.setBold();
+		dataStyle.setFontSize(10);
+		dataStyle.setTextAlignment("text-center");
+
+        hdrLabels.forEach(function(label) {
+            var paragraph = new sn_pdfgeneratorutils.Paragraph(label)
+			paragraph.addStyle(headerStyle);
+            var cell = new sn_pdfgeneratorutils.Cell();
+            cell.addParagraph(paragraph);
+            table.addHeaderCell(cell);
+        });
+
+        layoutArr.forEach(function(field) {
+            var value = gr.getValue(field) || '';
+            var dataParagraph = new sn_pdfgeneratorutils.Paragraph(value);
+			dataParagraph.addStyle(dataStyle);
+            var dataCell = new sn_pdfgeneratorutils.Cell();
+            dataCell.addParagraph(dataParagraph);
+            table.addCell(dataCell);
+        });
+
+        document.addTable(table);
+
+      
+    },
+
+    /**
+     * Adds footer with branding and timestamp.
+     */
+    _addFooter: function(document) {
+        var footerTbl = new sn_pdfgeneratorutils.Table(true, [140, 420], false);
+
+        var footerImg = new sn_pdfgeneratorutils.Image('5cd0056b53112a105d3a5ef0a0490e6c');
+        footerImg.setAutoScale(true)
+		footerImg.setHorizontalAlignment("Left");
+
+        var footerImgCell = new sn_pdfgeneratorutils.Cell();
+        footerImgCell.addImage(footerImg)
+		footerImgCell.setBorder(0)
+		footerImgCell.setPadding(0)
+		footerImgCell.setVerticalAlignment("bottom");
+
+        var timestamp = new GlideDateTime().getValue().replace(' ', 'T');
+        var footerText = "Generated By: Character Generator v1.1\nGenerated: " + timestamp;
+
+        var style = new sn_pdfgeneratorutils.Style();
+        style.setFontSize(9);
+		style.setTextAlignment("text-right");
+		style.setVerticalAlignment("bottom");
+
+        var textParagraph = new sn_pdfgeneratorutils.Paragraph(footerText)
+		textParagraph.addStyle(style);
+        var textCell = new sn_pdfgeneratorutils.Cell();
+        textCell.addParagraph(textParagraph)
+		textCell.setBorder(0)
+		textCell.setPadding(2)
+		textCell.setVerticalAlignment("bottom");
+
+        footerTbl.addCell(footerImgCell);
+        footerTbl.addCell(textCell);
+        document.addTable(footerTbl);
+    },
+	_buildVerticalSpacer:function(document,height) {
+    var spacerTbl = new sn_pdfgeneratorutils.Table(true, [560], false);
+    var spacerCell = new sn_pdfgeneratorutils.Cell();
+    spacerCell.setBorder(0);
+    spacerCell.setPadding(0);
+    spacerCell.setMinHeight(height);
+    spacerTbl.addCell(spacerCell);
+    document.addTable(spacerTbl);
+},
+    type: 'TableTopUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-27 17:24:38</sys_created_on>
+        <sys_id>5339152f538922105d3a5ef0a0490ead</sys_id>
+        <sys_mod_count>94</sys_mod_count>
+        <sys_name>TableTopUtils</sys_name>
+        <sys_package display_value="Table Top Tools" source="x_774159_table_t_0">c6a201ef53c522105d3a5ef0a0490eb3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Table Top Tools">c6a201ef53c522105d3a5ef0a0490eb3</sys_scope>
+        <sys_update_name>sys_script_include_5339152f538922105d3a5ef0a0490ead</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-16 03:17:49</sys_updated_on>
+    </sys_script_include>
+</record_update>

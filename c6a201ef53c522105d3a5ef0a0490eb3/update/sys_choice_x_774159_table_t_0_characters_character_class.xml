@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="character_class" table="x_774159_table_t_0_characters" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>character_class</element>
+            <name>x_774159_table_t_0_characters</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-04-29 22:04:28</sys_created_on>
+            <sys_id>593dac1053d126105d3a5ef0a0490e77</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>character_class</sys_name>
+            <sys_package display_value="Table Top Tools" source="x_774159_table_t_0">c6a201ef53c522105d3a5ef0a0490eb3</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Table Top Tools">c6a201ef53c522105d3a5ef0a0490eb3</sys_scope>
+            <sys_update_name>sys_choice_x_774159_table_t_0_characters_character_class</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-04-29 22:04:28</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>character_class</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Barbarian</label>
+            <language>en</language>
+            <name>x_774159_table_t_0_characters</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-04-29 22:04:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>153dac1053d126105d3a5ef0a0490e77</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-04-29 22:04:28</sys_updated_on>
+            <value>Barbarian</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>character_class</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Cleric</label>
+            <language>en</language>
+            <name>x_774159_table_t_0_characters</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-04-29 22:08:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b53ea09053d126105d3a5ef0a0490efc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-04-29 22:08:52</sys_updated_on>
+            <value>Cleric</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>character_class</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Druid</label>
+            <language>en</language>
+            <name>x_774159_table_t_0_characters</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-04-29 22:08:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>753ea09053d126105d3a5ef0a0490efd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-04-29 22:08:52</sys_updated_on>
+            <value>Druid</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>character_class</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Bard</label>
+            <language>en</language>
+            <name>x_774159_table_t_0_characters</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-04-29 22:08:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>353ea09053d126105d3a5ef0a0490efe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-04-29 22:08:52</sys_updated_on>
+            <value>Bard</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>character_class</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Wizard</label>
+            <language>en</language>
+            <name>x_774159_table_t_0_characters</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-04-29 22:08:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f13ea09053d126105d3a5ef0a0490eff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-04-29 22:08:52</sys_updated_on>
+            <value>Wizard</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>character_class</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Warlock</label>
+            <language>en</language>
+            <name>x_774159_table_t_0_characters</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-04-29 22:08:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b13ee09053d126105d3a5ef0a0490e00</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-04-29 22:08:52</sys_updated_on>
+            <value>Warlock</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>character_class</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Paladin</label>
+            <language>en</language>
+            <name>x_774159_table_t_0_characters</name>
+            <sequence>6</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-04-29 22:08:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>713ee09053d126105d3a5ef0a0490e01</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-04-29 22:08:52</sys_updated_on>
+            <value>Paladin</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>character_class</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Sorcerer</label>
+            <language>en</language>
+            <name>x_774159_table_t_0_characters</name>
+            <sequence>7</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-04-29 22:08:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>313ee09053d126105d3a5ef0a0490e02</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-04-29 22:08:52</sys_updated_on>
+            <value>Sorcerer</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>character_class</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Fighter</label>
+            <language>en</language>
+            <name>x_774159_table_t_0_characters</name>
+            <sequence>8</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-04-29 22:08:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fd3ee09053d126105d3a5ef0a0490e02</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-04-29 22:08:52</sys_updated_on>
+            <value>Fighter</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>character_class</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Monk</label>
+            <language>en</language>
+            <name>x_774159_table_t_0_characters</name>
+            <sequence>9</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-04-29 22:08:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bd3ee09053d126105d3a5ef0a0490e03</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-04-29 22:08:52</sys_updated_on>
+            <value>Monk</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>character_class</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Ranger</label>
+            <language>en</language>
+            <name>x_774159_table_t_0_characters</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-04-29 22:08:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7d3ee09053d126105d3a5ef0a0490e04</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-04-29 22:08:52</sys_updated_on>
+            <value>Ranger</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>character_class</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Rogue</label>
+            <language>en</language>
+            <name>x_774159_table_t_0_characters</name>
+            <sequence>11</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-04-29 22:08:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3d3ee09053d126105d3a5ef0a0490e05</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-04-29 22:08:52</sys_updated_on>
+            <value>Rogue</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>character_class</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Thief</label>
+            <language>en</language>
+            <name>x_774159_table_t_0_characters</name>
+            <sequence>12</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-04-29 22:08:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f93ee09053d126105d3a5ef0a0490e06</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-04-29 22:08:52</sys_updated_on>
+            <value>Thief</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>character_class</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Berserker</label>
+            <language>en</language>
+            <name>x_774159_table_t_0_characters</name>
+            <sequence>13</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-04-29 22:08:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b93ee09053d126105d3a5ef0a0490e07</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-04-29 22:08:52</sys_updated_on>
+            <value>Berserker</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>character_class</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Hunter</label>
+            <language>en</language>
+            <name>x_774159_table_t_0_characters</name>
+            <sequence>14</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-04-29 22:08:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>793ee09053d126105d3a5ef0a0490e08</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-04-29 22:08:52</sys_updated_on>
+            <value>Hunter</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>
