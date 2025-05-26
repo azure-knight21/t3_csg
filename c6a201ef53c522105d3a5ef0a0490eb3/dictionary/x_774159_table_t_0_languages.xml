@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="97063923534d22105d3a5ef0a0490e6f" label="Languages" max_length="40" name="x_774159_table_t_0_languages" type="collection">
+        <element label="Resource Base Link" max_length="150" name="resource_base_link" type="string"/>
+        <element label="Language Name" max_length="60" name="language_name" type="string"/>
+        <element label="Resource Config" max_length="32" name="resource_config" reference="x_774159_table_t_0_resource_configs" type="reference"/>
+        <element label="URL" max_length="150" name="url" type="string"/>
+        <element label="Index" max_length="60" name="index" type="string"/>
+        <index name="index">
+            <element name="resource_config"/>
+        </index>
+    </element>
+</database>

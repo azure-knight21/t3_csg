@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field>hit_points</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-30 02:21:38</sys_created_on>
+        <sys_id>ea08ad9853d526105d3a5ef0a0490e42</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>hit_points</sys_name>
+        <sys_package display_value="Table Top Tools" source="x_774159_table_t_0">c6a201ef53c522105d3a5ef0a0490eb3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Table Top Tools">c6a201ef53c522105d3a5ef0a0490eb3</sys_scope>
+        <sys_update_name>sys_ui_policy_action_ea08ad9853d526105d3a5ef0a0490e42</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-30 02:21:38</sys_updated_on>
+        <table>x_774159_table_t_0_characters</table>
+        <ui_policy display_value="Set Stats to ReadOnly">cf356d9453d526105d3a5ef0a0490e7c</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="DELETE" query="documentkey=ea08ad9853d526105d3a5ef0a0490e42"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Table Top Tools">c6a201ef53c522105d3a5ef0a0490eb3</application>
+        <file_path/>
+        <instance_id>0097de14dbd6f15892f5684e139619dc</instance_id>
+        <instance_name>dev199086</instance_name>
+        <name>sys_ui_policy_action_ea08ad9853d526105d3a5ef0a0490e42</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>true</disabled><field>hit_points</field><field_message/><field_message_type>none</field_message_type><mandatory>ignore</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-04-30 02:21:38</sys_created_on><sys_id>ea08ad9853d526105d3a5ef0a0490e42</sys_id><sys_mod_count>0</sys_mod_count><sys_name>hit_points</sys_name><sys_package display_value="Table Top Tools" source="x_774159_table_t_0">c6a201ef53c522105d3a5ef0a0490eb3</sys_package><sys_policy/><sys_scope display_value="Table Top Tools">c6a201ef53c522105d3a5ef0a0490eb3</sys_scope><sys_update_name>sys_ui_policy_action_ea08ad9853d526105d3a5ef0a0490e42</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-04-30 02:21:38</sys_updated_on><table>x_774159_table_t_0_characters</table><ui_policy display_value="Set Stats to ReadOnly">cf356d9453d526105d3a5ef0a0490e7c</ui_policy><value/><value_action>ignore</value_action><visible>ignore</visible></sys_ui_policy_action><sys_translated_text action="delete_multiple" query="documentkey=ea08ad9853d526105d3a5ef0a0490e42"/></record_update>]]></payload>
+        <payload_hash>485599081</payload_hash>
+        <record_name>hit_points</record_name>
+        <reverted_from/>
+        <source>e1020baf538162105d3a5ef0a0490ea3</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-30 02:21:38</sys_created_on>
+        <sys_id>1c182d9853d526105d3a5ef0a0490efa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>196847febbc0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-30 02:21:38</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>10182d988dd5261083e7c8607b8872fa</update_guid>
+        <update_guid_history>10182d988dd5261083e7c8607b8872fa:485599081</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-30 02:33:15</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>1f9b53fba99e4bac843b1e0ec25e0d10</sys_id>
+        <sys_metadata>ea08ad9853d526105d3a5ef0a0490e42</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>hit_points</sys_name>
+        <sys_package display_value="Table Top Tools" source="x_774159_table_t_0">c6a201ef53c522105d3a5ef0a0490eb3</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Table Top Tools">c6a201ef53c522105d3a5ef0a0490eb3</sys_scope>
+        <sys_scope_delete display_value="">6b57866d921b4d949bbd39fa94877aa4</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_ea08ad9853d526105d3a5ef0a0490e42</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_ea08ad9853d526105d3a5ef0a0490e42">1c182d9853d526105d3a5ef0a0490efa</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-30 02:33:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

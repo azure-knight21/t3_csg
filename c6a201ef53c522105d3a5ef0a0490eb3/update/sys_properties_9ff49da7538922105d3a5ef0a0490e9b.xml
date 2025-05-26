@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_774159_table_t_0.api_url</name>
+        <read_roles/>
+        <suffix>api_url</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-27 17:05:17</sys_created_on>
+        <sys_id>9ff49da7538922105d3a5ef0a0490e9b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_774159_table_t_0.api_url</sys_name>
+        <sys_package display_value="Table Top Tools" source="x_774159_table_t_0">c6a201ef53c522105d3a5ef0a0490eb3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Table Top Tools">c6a201ef53c522105d3a5ef0a0490eb3</sys_scope>
+        <sys_update_name>sys_properties_9ff49da7538922105d3a5ef0a0490e9b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-27 17:05:17</sys_updated_on>
+        <type>string</type>
+        <value>https://www.dnd5eapi.co</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=9ff49da7538922105d3a5ef0a0490e9b"/>
+</record_update>

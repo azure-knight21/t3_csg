@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Language Info" section_id="bb06b5eb530d22105d3a5ef0a0490ed4" sys_domain="global" table="x_774159_table_t_0_languages" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>language_name</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-04-27 19:31:54</sys_created_on>
+            <sys_id>8f17fd63534d22105d3a5ef0a0490ed7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Language Info" display_value="Language Info" name="x_774159_table_t_0_languages" sys_domain="global" view="Default view">bb06b5eb530d22105d3a5ef0a0490ed4</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-04-27 19:31:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>url</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-04-27 19:31:54</sys_created_on>
+            <sys_id>0f17fd63534d22105d3a5ef0a0490ed8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Language Info" display_value="Language Info" name="x_774159_table_t_0_languages" sys_domain="global" view="Default view">bb06b5eb530d22105d3a5ef0a0490ed4</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-04-27 19:31:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-04-27 19:31:54</sys_created_on>
+            <sys_id>0717fd63534d22105d3a5ef0a0490ed9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Language Info" display_value="Language Info" name="x_774159_table_t_0_languages" sys_domain="global" view="Default view">bb06b5eb530d22105d3a5ef0a0490ed4</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-04-27 19:31:54</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>index</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-04-27 19:31:54</sys_created_on>
+            <sys_id>0f17fd63534d22105d3a5ef0a0490ed9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Language Info" display_value="Language Info" name="x_774159_table_t_0_languages" sys_domain="global" view="Default view">bb06b5eb530d22105d3a5ef0a0490ed4</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-04-27 19:31:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Language Info</caption>
+            <header>false</header>
+            <name>x_774159_table_t_0_languages</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-04-27 19:27:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bb06b5eb530d22105d3a5ef0a0490ed4</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>x_774159_table_t_0_languages</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Table Top Tools" source="x_774159_table_t_0">c6a201ef53c522105d3a5ef0a0490eb3</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Table Top Tools">c6a201ef53c522105d3a5ef0a0490eb3</sys_scope>
+            <sys_update_name>sys_ui_section_bb06b5eb530d22105d3a5ef0a0490ed4</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-04-27 19:31:54</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

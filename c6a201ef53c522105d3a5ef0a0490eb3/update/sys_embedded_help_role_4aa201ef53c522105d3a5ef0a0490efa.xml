@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>10</order>
+        <role display_value="x_774159_table_t_0.admin" name="x_774159_table_t_0.admin">4aa201ef53c522105d3a5ef0a0490ef8</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-27 15:42:44</sys_created_on>
+        <sys_id>4aa201ef53c522105d3a5ef0a0490efa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>4aa201ef53c522105d3a5ef0a0490ef8</sys_name>
+        <sys_package display_value="Table Top Tools" source="x_774159_table_t_0">c6a201ef53c522105d3a5ef0a0490eb3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Table Top Tools">c6a201ef53c522105d3a5ef0a0490eb3</sys_scope>
+        <sys_update_name>sys_embedded_help_role_4aa201ef53c522105d3a5ef0a0490efa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-27 15:42:44</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_doc_pdf_template_mapping">
+    <sn_doc_pdf_template_mapping action="DELETE">
+        <active>true</active>
+        <advanced_script_toggle>false</advanced_script_toggle>
+        <box_height/>
+        <box_width/>
+        <date_offset_quantity>0</date_offset_quantity>
+        <date_offset_type>on</date_offset_type>
+        <date_offset_units>days</date_offset_units>
+        <doc_left/>
+        <doc_top/>
+        <document display_value="Character Sheet">1f5013b9535122105d3a5ef0a0490e9d</document>
+        <document_field>dhFormfield-5650007733</document_field>
+        <document_field_label>dhFormfield-5650007733</document_field_label>
+        <document_field_type>text</document_field_type>
+        <format/>
+        <mandatory>false</mandatory>
+        <mapping_field/>
+        <mapping_table>asset_task</mapping_table>
+        <page_number>1</page_number>
+        <participant/>
+        <preview_value>dhFormfield-5650007733</preview_value>
+        <read_only>false</read_only>
+        <script/>
+        <select_date_format/>
+        <sign_bottom/>
+        <sign_left/>
+        <sign_top/>
+        <specific_date_format/>
+        <states/>
+        <sys_class_name>sn_doc_pdf_template_mapping</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-05 01:51:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>5d11dfb9535122105d3a5ef0a0490e5d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>dhFormfield-5650007733</sys_name>
+        <sys_package display_value="Table Top Tools" source="x_774159_table_t_0">c6a201ef53c522105d3a5ef0a0490eb3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Table Top Tools">c6a201ef53c522105d3a5ef0a0490eb3</sys_scope>
+        <sys_update_name>sn_doc_pdf_template_mapping_5d11dfb9535122105d3a5ef0a0490e5d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-05 01:51:20</sys_updated_on>
+        <use_signing_date>false</use_signing_date>
+    </sn_doc_pdf_template_mapping>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Table Top Tools">c6a201ef53c522105d3a5ef0a0490eb3</application>
+        <file_path/>
+        <instance_id>0097de14dbd6f15892f5684e139619dc</instance_id>
+        <instance_name>dev199086</instance_name>
+        <name>sn_doc_pdf_template_mapping_5d11dfb9535122105d3a5ef0a0490e5d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_doc_pdf_template_mapping"><sn_doc_pdf_template_mapping action="INSERT_OR_UPDATE"><active>true</active><advanced_script_toggle>false</advanced_script_toggle><box_height/><box_width/><date_offset_quantity>0</date_offset_quantity><date_offset_type>on</date_offset_type><date_offset_units>days</date_offset_units><doc_left/><doc_top/><document display_value="Character Sheet">1f5013b9535122105d3a5ef0a0490e9d</document><document_field>dhFormfield-5650007733</document_field><document_field_label>dhFormfield-5650007733</document_field_label><document_field_type>text</document_field_type><format/><mandatory>false</mandatory><mapping_field/><mapping_table>asset_task</mapping_table><page_number>1</page_number><participant/><preview_value>dhFormfield-5650007733</preview_value><read_only>false</read_only><script/><select_date_format/><sign_bottom/><sign_left/><sign_top/><specific_date_format/><states/><sys_class_name>sn_doc_pdf_template_mapping</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-05-05 01:51:20</sys_created_on><sys_domain>global</sys_domain><sys_id>5d11dfb9535122105d3a5ef0a0490e5d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>dhFormfield-5650007733</sys_name><sys_package display_value="Table Top Tools" source="x_774159_table_t_0">c6a201ef53c522105d3a5ef0a0490eb3</sys_package><sys_policy/><sys_scope display_value="Table Top Tools">c6a201ef53c522105d3a5ef0a0490eb3</sys_scope><sys_update_name>sn_doc_pdf_template_mapping_5d11dfb9535122105d3a5ef0a0490e5d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-05-05 01:51:20</sys_updated_on><use_signing_date>false</use_signing_date></sn_doc_pdf_template_mapping></record_update>]]></payload>
+        <payload_hash>-875786150</payload_hash>
+        <record_name>dhFormfield-5650007733</record_name>
+        <reverted_from/>
+        <source>e1020baf538162105d3a5ef0a0490ea3</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-05 01:51:20</sys_created_on>
+        <sys_id>5911dfb9535122105d3a5ef0a0490e5f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1969e23fc470000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-05 01:51:20</sys_updated_on>
+        <type>Template Mapping</type>
+        <update_guid>5d11dfb9df512210e01f3aa1c0d00a5e</update_guid>
+        <update_guid_history>5d11dfb9df512210e01f3aa1c0d00a5e:-875786150</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="dhFormfield-5650007733">c922573d535122105d3a5ef0a0490ebf</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-05 01:55:57</sys_created_on>
+        <sys_db_object display_value="" name="sn_doc_pdf_template_mapping">sn_doc_pdf_template_mapping</sys_db_object>
+        <sys_id>aad9a9e390c3459eb66e6a3ebbd325c1</sys_id>
+        <sys_metadata>5d11dfb9535122105d3a5ef0a0490e5d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>dhFormfield-5650007733</sys_name>
+        <sys_package display_value="Table Top Tools" source="x_774159_table_t_0">c6a201ef53c522105d3a5ef0a0490eb3</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Table Top Tools">c6a201ef53c522105d3a5ef0a0490eb3</sys_scope>
+        <sys_scope_delete display_value="">6b57866d921b4d949bbd39fa94877aa4</sys_scope_delete>
+        <sys_update_name>sn_doc_pdf_template_mapping_5d11dfb9535122105d3a5ef0a0490e5d</sys_update_name>
+        <sys_update_version display_value="sn_doc_pdf_template_mapping_5d11dfb9535122105d3a5ef0a0490e5d">5911dfb9535122105d3a5ef0a0490e5f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-05 01:55:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

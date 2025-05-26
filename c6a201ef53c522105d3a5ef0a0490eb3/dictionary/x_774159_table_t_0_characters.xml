@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="0e7243ef538162105d3a5ef0a0490ee4" label="Characters" max_length="40" name="x_774159_table_t_0_characters" type="collection">
+        <element default="true" label="GenStatFlag" max_length="40" name="genstatflag" type="boolean"/>
+        <element choice="1" default="Neutral" label="Alignment" max_length="40" name="alignment" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Neutral Evil" sequence="8" value="Neutral Evil"/>
+                <element inactive_on_update="false" label="Lawful Good" sequence="4" value="Lawful Good"/>
+                <element inactive_on_update="false" label="Neutral Good" sequence="7" value="Neutral Good"/>
+                <element inactive_on_update="false" label="Lawful Neutral" sequence="3" value="Lawful Neutral"/>
+                <element inactive_on_update="false" label="Neutral" sequence="6" value="Neutral"/>
+                <element inactive_on_update="false" label="Chaotic Evil" sequence="2" value="Chaotic Evil"/>
+                <element inactive_on_update="false" label="Lawful Evil" sequence="5" value="Lawful Evil"/>
+                <element inactive_on_update="false" label="Chaotic Good" sequence="1" value="Chaotic Good"/>
+                <element inactive_on_update="false" label="Chaotic Neutral" sequence="0" value="Chaotic Neutral"/>
+            </choice>
+        </element>
+        <element label="Character Portrait" max_length="40" name="character_portrait" type="user_image"/>
+        <element choice="3" default="Fighter" label="Character Class" max_length="40" name="character_class" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Barbarian" sequence="0" value="Barbarian"/>
+                <element inactive_on_update="false" label="Sorcerer" sequence="7" value="Sorcerer"/>
+                <element inactive_on_update="false" label="Bard" sequence="3" value="Bard"/>
+                <element inactive_on_update="false" label="Rogue" sequence="11" value="Rogue"/>
+                <element inactive_on_update="false" label="Paladin" sequence="6" value="Paladin"/>
+                <element inactive_on_update="false" label="Druid" sequence="2" value="Druid"/>
+                <element inactive_on_update="false" label="Hunter" sequence="14" value="Hunter"/>
+                <element inactive_on_update="false" label="Ranger" sequence="10" value="Ranger"/>
+                <element inactive_on_update="false" label="Warlock" sequence="5" value="Warlock"/>
+                <element inactive_on_update="false" label="Cleric" sequence="1" value="Cleric"/>
+                <element inactive_on_update="false" label="Berserker" sequence="13" value="Berserker"/>
+                <element inactive_on_update="false" label="Monk" sequence="9" value="Monk"/>
+                <element inactive_on_update="false" label="Wizard" sequence="4" value="Wizard"/>
+                <element inactive_on_update="false" label="Thief" sequence="12" value="Thief"/>
+                <element inactive_on_update="false" label="Fighter" sequence="8" value="Fighter"/>
+            </choice>
+        </element>
+        <element label="EnablePDFGen" max_length="40" name="enablepdfgen" type="boolean"/>
+        <element label="Backstory" max_length="4000" name="backstory" type="string"/>
+        <element label="Character Name" max_length="255" name="character_name" type="string"/>
+        <element label="Hit Points" max_length="40" name="hit_points" type="integer"/>
+        <element default="true" label="EditCharFlag" max_length="40" name="editcharflag" type="boolean"/>
+        <element label="Strength" max_length="40" name="strength" type="integer"/>
+        <element label="Dexterity" max_length="40" name="dexterity" type="integer"/>
+        <element label="Intelligence" max_length="40" name="intelligence" type="integer"/>
+        <element label="Constitution" max_length="40" name="constitution" type="integer"/>
+        <element label="Charisma" max_length="40" name="charisma" type="integer"/>
+        <element label="Wisdom" max_length="40" name="wisdom" type="integer"/>
+    </element>
+</database>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="af311d63538922105d3a5ef0a0490ec6" label="Resource Configs" max_length="40" name="x_774159_table_t_0_resource_configs" type="collection">
+        <element label="Payload Returned" max_length="40000" name="payload_returned" type="string"/>
+        <element choice="3" label="Resource Method" max_length="40" name="resource_method" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="GET" sequence="0" value="GET"/>
+                <element inactive_on_update="false" label="POST" sequence="1" value="POST"/>
+            </choice>
+        </element>
+        <element label="Description" max_length="250" name="description" type="string"/>
+        <element label="Resource Link" max_length="150" name="resource_link" type="string"/>
+        <element label="Master Resource" max_length="40" name="master_resource" type="boolean"/>
+    </element>
+</database>

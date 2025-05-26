@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="Portrait" section_id="71b7074853e1ea105d3a5ef0a0490e1e" sys_domain="global" table="x_774159_table_t_0_characters" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>character_portrait</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-05-12 00:56:45</sys_created_on>
+            <sys_id>02b7074853e1ea105d3a5ef0a0490e3f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Portrait" display_value="Portrait" name="x_774159_table_t_0_characters" sys_domain="global" view="Default view">71b7074853e1ea105d3a5ef0a0490e1e</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-05-12 00:56:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>Portrait</caption>
+            <header>false</header>
+            <name>x_774159_table_t_0_characters</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-05-12 00:56:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>71b7074853e1ea105d3a5ef0a0490e1e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_774159_table_t_0_characters</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Table Top Tools" source="x_774159_table_t_0">c6a201ef53c522105d3a5ef0a0490eb3</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Table Top Tools">c6a201ef53c522105d3a5ef0a0490eb3</sys_scope>
+            <sys_update_name>sys_ui_section_71b7074853e1ea105d3a5ef0a0490e1e</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-05-12 00:56:44</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Table Top Tools">c6a201ef53c522105d3a5ef0a0490eb3</application>
+        <file_path/>
+        <instance_id>0097de14dbd6f15892f5684e139619dc</instance_id>
+        <instance_name>dev199086</instance_name>
+        <name>sys_ui_section_71b7074853e1ea105d3a5ef0a0490e1e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Portrait" section_id="71b7074853e1ea105d3a5ef0a0490e1e" sys_domain="global" table="x_774159_table_t_0_characters" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>character_portrait</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-05-12 00:56:45</sys_created_on><sys_id>02b7074853e1ea105d3a5ef0a0490e3f</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Portrait" display_value="Portrait" name="x_774159_table_t_0_characters" sys_domain="global" view="Default view">71b7074853e1ea105d3a5ef0a0490e1e</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-05-12 00:56:45</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>Portrait</caption><header>false</header><name>x_774159_table_t_0_characters</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-05-12 00:56:44</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>71b7074853e1ea105d3a5ef0a0490e1e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_774159_table_t_0_characters</sys_name><sys_overrides/><sys_package display_value="Table Top Tools" source="x_774159_table_t_0">c6a201ef53c522105d3a5ef0a0490eb3</sys_package><sys_policy/><sys_scope display_value="Table Top Tools">c6a201ef53c522105d3a5ef0a0490eb3</sys_scope><sys_update_name>sys_ui_section_71b7074853e1ea105d3a5ef0a0490e1e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-05-12 00:56:44</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>-1687149986</payload_hash>
+        <record_name>Characters</record_name>
+        <reverted_from/>
+        <source>e1020baf538162105d3a5ef0a0490ea3</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-12 00:56:45</sys_created_on>
+        <sys_id>02b7074853e1ea105d3a5ef0a0490e41</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>196c1fe871c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-12 00:56:45</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>86b70748c6e1ea100add87a2a3f39b40</update_guid>
+        <update_guid_history>86b70748c6e1ea100add87a2a3f39b40:-1687149986</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-12 00:58:45</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>00aa9abb2d9d46a0836cb6def5a0af90</sys_id>
+        <sys_metadata>71b7074853e1ea105d3a5ef0a0490e1e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Portrait</sys_name>
+        <sys_package display_value="Table Top Tools" source="x_774159_table_t_0">c6a201ef53c522105d3a5ef0a0490eb3</sys_package>
+        <sys_parent display_value="Table T 0 Characters">0e7243ef538162105d3a5ef0a0490ee4</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Table Top Tools">c6a201ef53c522105d3a5ef0a0490eb3</sys_scope>
+        <sys_scope_delete display_value="">6b57866d921b4d949bbd39fa94877aa4</sys_scope_delete>
+        <sys_update_name>sys_ui_section_71b7074853e1ea105d3a5ef0a0490e1e</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_71b7074853e1ea105d3a5ef0a0490e1e">02b7074853e1ea105d3a5ef0a0490e41</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-12 00:58:45</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
