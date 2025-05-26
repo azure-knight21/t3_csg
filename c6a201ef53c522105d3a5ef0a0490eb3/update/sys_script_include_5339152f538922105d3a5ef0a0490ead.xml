@@ -202,15 +202,17 @@ TableTopUtils.prototype = {
             return;
         }
 
-        var pageSize = new sn_pdfgeneratorutils.PdfPage("Letter", "Portrait");
+        var pageSize = new sn_pdfgeneratorutils.PdfPage("Letter", this._getOrientation(sysId));
+		gs.info(this._getOrientation(sysId));
         var document = new sn_pdfgeneratorutils.Document.createDocument(pageSize);
 
         this._addHeader(document, gr);
         this._addDetailsTable(document, gr, layoutArr, hdrLabels, colWidth);
-		this._buildVerticalSpacer(document,50);
+        this._buildVerticalSpacer(document, 50);
         this._addFooter(document);
 
-        document.saveAsAttachment(tbl, sysId, 'CharacterProfile3.pdf');
+        document.saveAsAttachment(tbl, sysId, gr.getValue('character_name')+'.pdf');
+		return 'Ok';
     },
 
     /**
@@ -274,31 +276,31 @@ TableTopUtils.prototype = {
 
         var mainTbl = new sn_pdfgeneratorutils.Table(true, [140, 420], false);
 
-        var image = new sn_pdfgeneratorutils.Image('258f4f805325ea105d3a5ef0a0490ea'); // Left-side image
+        var image = new sn_pdfgeneratorutils.Image(this._getImageId(gr.getValue('sys_id'), gr.getTableName())); // Left-side image
         image.setAutoScale(true);
         image.setColoredBorder(black, 5);
 
         var imgCell = new sn_pdfgeneratorutils.Cell();
         imgCell.addImage(image);
-        imgCell.setBorder(0)
-		imgCell.setPadding(0);
+        imgCell.setBorder(0);
+        imgCell.setPadding(0);
 
         var nestedTable = new sn_pdfgeneratorutils.Table(true, [420], false);
 
         var headerStyle = new sn_pdfgeneratorutils.Style();
-        headerStyle.setFontSize(14)
-		headerStyle.setBold();
-		headerStyle.setBackgroundColor(black);
-		headerStyle.setFontColor(white);
-		headerStyle.setTextAlignment("text-center");
+        headerStyle.setFontSize(14);
+        headerStyle.setBold();
+        headerStyle.setBackgroundColor(black);
+        headerStyle.setFontColor(white);
+        headerStyle.setTextAlignment("text-center");
 
         var headerParagraph = new sn_pdfgeneratorutils.Paragraph("Back Story");
         headerParagraph.addStyle(headerStyle);
 
         var headerCell = new sn_pdfgeneratorutils.Cell();
         headerCell.addParagraph(headerParagraph)
-		headerCell.setBorder(0);
-		headerCell.setPadding(0);
+        headerCell.setBorder(0);
+        headerCell.setPadding(0);
 
         var contentStyle = new sn_pdfgeneratorutils.Style();
         contentStyle.setFontSize(10);
@@ -308,16 +310,16 @@ TableTopUtils.prototype = {
 
         var contentCell = new sn_pdfgeneratorutils.Cell();
         contentCell.addParagraph(contentParagraph);
-		contentCell.setBorder(0);
-		contentCell.setPadding(1);
+        contentCell.setBorder(0);
+        contentCell.setPadding(1);
 
         nestedTable.addCell(headerCell);
         nestedTable.addCell(contentCell);
 
         var nestedTableCell = new sn_pdfgeneratorutils.Cell();
         nestedTableCell.addTable(nestedTable);
-		nestedTableCell.setBorder(0);
-		nestedTableCell.setPadding(0);
+        nestedTableCell.setBorder(0);
+        nestedTableCell.setPadding(0);
 
         mainTbl.addCell(imgCell);
         mainTbl.addCell(nestedTableCell);
@@ -335,20 +337,20 @@ TableTopUtils.prototype = {
 
         var headerStyle = new sn_pdfgeneratorutils.Style();
         headerStyle.setBackgroundColor(black);
-		headerStyle.setTextAlignment("text-center");
-		headerStyle.setBold();
-		headerStyle.setFontColor(white);
-		headerStyle.setFontSize(10);
+        headerStyle.setTextAlignment("text-center");
+        headerStyle.setBold();
+        headerStyle.setFontColor(white);
+        headerStyle.setFontSize(10);
         table.setHeaderStyle(headerStyle);
 
         var dataStyle = new sn_pdfgeneratorutils.Style();
         dataStyle.setBold();
-		dataStyle.setFontSize(10);
-		dataStyle.setTextAlignment("text-center");
+        dataStyle.setFontSize(10);
+        dataStyle.setTextAlignment("text-center");
 
         hdrLabels.forEach(function(label) {
             var paragraph = new sn_pdfgeneratorutils.Paragraph(label)
-			paragraph.addStyle(headerStyle);
+            paragraph.addStyle(headerStyle);
             var cell = new sn_pdfgeneratorutils.Cell();
             cell.addParagraph(paragraph);
             table.addHeaderCell(cell);
@@ -357,7 +359,7 @@ TableTopUtils.prototype = {
         layoutArr.forEach(function(field) {
             var value = gr.getValue(field) || '';
             var dataParagraph = new sn_pdfgeneratorutils.Paragraph(value);
-			dataParagraph.addStyle(dataStyle);
+            dataParagraph.addStyle(dataStyle);
             var dataCell = new sn_pdfgeneratorutils.Cell();
             dataCell.addParagraph(dataParagraph);
             table.addCell(dataCell);
@@ -365,7 +367,7 @@ TableTopUtils.prototype = {
 
         document.addTable(table);
 
-      
+
     },
 
     /**
@@ -375,57 +377,81 @@ TableTopUtils.prototype = {
         var footerTbl = new sn_pdfgeneratorutils.Table(true, [140, 420], false);
 
         var footerImg = new sn_pdfgeneratorutils.Image('5cd0056b53112a105d3a5ef0a0490e6c');
-        footerImg.setAutoScale(true)
-		footerImg.setHorizontalAlignment("Left");
+        footerImg.setAutoScale(true);
+        footerImg.setHorizontalAlignment("Left");
 
         var footerImgCell = new sn_pdfgeneratorutils.Cell();
-        footerImgCell.addImage(footerImg)
-		footerImgCell.setBorder(0)
-		footerImgCell.setPadding(0)
-		footerImgCell.setVerticalAlignment("bottom");
+        footerImgCell.addImage(footerImg);
+        footerImgCell.setBorder(0);
+        footerImgCell.setPadding(0);
+        footerImgCell.setVerticalAlignment("bottom");
 
         var timestamp = new GlideDateTime().getValue().replace(' ', 'T');
         var footerText = "Generated By: Character Generator v1.1\nGenerated: " + timestamp;
 
         var style = new sn_pdfgeneratorutils.Style();
         style.setFontSize(9);
-		style.setTextAlignment("text-right");
-		style.setVerticalAlignment("bottom");
+        style.setTextAlignment("text-right");
+        style.setVerticalAlignment("bottom");
 
-        var textParagraph = new sn_pdfgeneratorutils.Paragraph(footerText)
-		textParagraph.addStyle(style);
+        var textParagraph = new sn_pdfgeneratorutils.Paragraph(footerText);
+        textParagraph.addStyle(style);
         var textCell = new sn_pdfgeneratorutils.Cell();
-        textCell.addParagraph(textParagraph)
-		textCell.setBorder(0)
-		textCell.setPadding(2)
-		textCell.setVerticalAlignment("bottom");
+        textCell.addParagraph(textParagraph);
+        textCell.setBorder(0);
+        textCell.setPadding(2);
+        textCell.setVerticalAlignment("bottom");
 
         footerTbl.addCell(footerImgCell);
         footerTbl.addCell(textCell);
         document.addTable(footerTbl);
     },
-	_buildVerticalSpacer:function(document,height) {
-    var spacerTbl = new sn_pdfgeneratorutils.Table(true, [560], false);
-    var spacerCell = new sn_pdfgeneratorutils.Cell();
-    spacerCell.setBorder(0);
-    spacerCell.setPadding(0);
-    spacerCell.setMinHeight(height);
-    spacerTbl.addCell(spacerCell);
-    document.addTable(spacerTbl);
-},
+    _buildVerticalSpacer: function(document, height) {
+        var spacerTbl = new sn_pdfgeneratorutils.Table(true, [560], false);
+        var spacerCell = new sn_pdfgeneratorutils.Cell();
+        spacerCell.setBorder(0);
+        spacerCell.setPadding(0);
+        spacerCell.setMinHeight(height);
+        spacerTbl.addCell(spacerCell);
+        document.addTable(spacerTbl);
+    },
+
+    _getImageId: function(sysId, tblName) {
+        var gr = new GlideRecord('sys_attachment');
+        gr.addQuery('table_sys_id', sysId);
+        gr.addQuery('table_name', 'CONTAINS', 'ZZ_YY' + tblName);
+        gr.query();
+
+        if (gr.next()) {
+            return gr.getValue('sys_id');
+        }
+    },
+
+    _getOrientation: function(sysId) {
+        var gr = new GlideRecord('question_answer');
+        gr.addQuery('table_sys_id', sysId);
+        gr.addQuery('question.name', 'layout_options');
+        gr.query();
+
+        if (gr.next()) {
+            return gr.getValue('value');
+        }else{
+			return 'Portrait';
+		}
+    },
     type: 'TableTopUtils'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-04-27 17:24:38</sys_created_on>
         <sys_id>5339152f538922105d3a5ef0a0490ead</sys_id>
-        <sys_mod_count>94</sys_mod_count>
+        <sys_mod_count>104</sys_mod_count>
         <sys_name>TableTopUtils</sys_name>
         <sys_package display_value="Table Top Tools" source="x_774159_table_t_0">c6a201ef53c522105d3a5ef0a0490eb3</sys_package>
         <sys_policy/>
         <sys_scope display_value="Table Top Tools">c6a201ef53c522105d3a5ef0a0490eb3</sys_scope>
         <sys_update_name>sys_script_include_5339152f538922105d3a5ef0a0490ead</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-16 03:17:49</sys_updated_on>
+        <sys_updated_on>2025-05-26 21:59:02</sys_updated_on>
     </sys_script_include>
 </record_update>

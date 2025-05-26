@@ -13,18 +13,20 @@
 
 Constants.CHARACTER_TABLE = 'x_774159_table_t_0_characters';
 
+Constants.IMG_PREFIX = 'ZZ_YY';
+
 ]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-04-29 22:29:40</sys_created_on>
         <sys_id>59323cd053d126105d3a5ef0a0490e81</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Constants</sys_name>
         <sys_package display_value="Table Top Tools" source="x_774159_table_t_0">c6a201ef53c522105d3a5ef0a0490eb3</sys_package>
         <sys_policy/>
         <sys_scope display_value="Table Top Tools">c6a201ef53c522105d3a5ef0a0490eb3</sys_scope>
         <sys_update_name>sys_script_include_59323cd053d126105d3a5ef0a0490e81</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-04-29 22:53:37</sys_updated_on>
+        <sys_updated_on>2025-05-26 20:39:12</sys_updated_on>
     </sys_script_include>
 </record_update>
