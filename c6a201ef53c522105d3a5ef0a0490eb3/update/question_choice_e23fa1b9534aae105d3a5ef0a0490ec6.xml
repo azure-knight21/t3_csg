@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <order>400</order>
+        <published_ref/>
+        <question display_value="Race">7edee179534aae105d3a5ef0a0490ec6</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-11 01:31:12</sys_created_on>
+        <sys_id>e23fa1b9534aae105d3a5ef0a0490ec6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Gnome</sys_name>
+        <sys_package display_value="Table Top Tools" source="x_774159_table_t_0">c6a201ef53c522105d3a5ef0a0490eb3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Table Top Tools">c6a201ef53c522105d3a5ef0a0490eb3</sys_scope>
+        <sys_update_name>question_choice_e23fa1b9534aae105d3a5ef0a0490ec6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-11 01:31:12</sys_updated_on>
+        <text>Gnome</text>
+        <value>gnome</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=e23fa1b9534aae105d3a5ef0a0490ec6"/>
+</record_update>

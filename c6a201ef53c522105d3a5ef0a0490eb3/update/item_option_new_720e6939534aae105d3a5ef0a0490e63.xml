@@ -27,7 +27,7 @@
         <help_tag>More information</help_tag>
         <help_text/>
         <hidden>false</hidden>
-        <include_none>false</include_none>
+        <include_none>true</include_none>
         <instructions/>
         <layout>normal</layout>
         <list_table/>
@@ -38,18 +38,18 @@
         <lookup_value/>
         <macro/>
         <macroponent/>
-        <mandatory>false</mandatory>
+        <mandatory>true</mandatory>
         <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>formatter</name>
+        <name>gender</name>
         <not_available_conversation>false</not_available_conversation>
-        <order>50</order>
+        <order>35</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text>End of Character Info</question_text>
+        <question_text>Gender</question_text>
         <read_only>false</read_only>
         <read_roles/>
         <read_script/>
@@ -77,20 +77,20 @@
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-05-12 01:17:03</sys_created_on>
-        <sys_id>dc5c47cc53e1ea105d3a5ef0a0490e59</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>End of Character Info</sys_name>
+        <sys_created_on>2025-06-11 01:26:21</sys_created_on>
+        <sys_id>720e6939534aae105d3a5ef0a0490e63</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Gender</sys_name>
         <sys_package display_value="Table Top Tools" source="x_774159_table_t_0">c6a201ef53c522105d3a5ef0a0490eb3</sys_package>
         <sys_policy/>
         <sys_scope display_value="Table Top Tools">c6a201ef53c522105d3a5ef0a0490eb3</sys_scope>
-        <sys_update_name>item_option_new_dc5c47cc53e1ea105d3a5ef0a0490e59</sys_update_name>
+        <sys_update_name>item_option_new_720e6939534aae105d3a5ef0a0490e63</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-11 01:28:29</sys_updated_on>
+        <sys_updated_on>2025-06-11 01:40:11</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>
-        <type>20</type>
+        <type>5</type>
         <ui_page/>
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>
@@ -106,22 +106,22 @@
         <visible_summary>true</visible_summary>
         <write_roles/>
     </item_option_new>
-    <sys_translated_text action="delete_multiple" query="documentkey=dc5c47cc53e1ea105d3a5ef0a0490e59"/>
-    <fx_price action="delete_multiple" query="id=dc5c47cc53e1ea105d3a5ef0a0490e59"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=720e6939534aae105d3a5ef0a0490e63"/>
+    <fx_price action="delete_multiple" query="id=720e6939534aae105d3a5ef0a0490e63"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>price_if_checked</field>
-        <id>dc5c47cc53e1ea105d3a5ef0a0490e59</id>
+        <id>720e6939534aae105d3a5ef0a0490e63</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-05-12 01:17:03</sys_created_on>
-        <sys_id>df5c03005325ea105d3a5ef0a0490e14</sys_id>
+        <sys_created_on>2025-06-11 01:26:22</sys_created_on>
+        <sys_id>9c3e2d39534aae105d3a5ef0a0490e23</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-12 01:17:03</sys_updated_on>
+        <sys_updated_on>2025-06-11 01:26:22</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
@@ -129,16 +129,16 @@
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>rec_price_if_checked</field>
-        <id>dc5c47cc53e1ea105d3a5ef0a0490e59</id>
+        <id>720e6939534aae105d3a5ef0a0490e63</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-05-12 01:17:03</sys_created_on>
-        <sys_id>975c03005325ea105d3a5ef0a0490e14</sys_id>
+        <sys_created_on>2025-06-11 01:26:22</sys_created_on>
+        <sys_id>083e2d39534aae105d3a5ef0a0490e22</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-12 01:17:03</sys_updated_on>
+        <sys_updated_on>2025-06-11 01:26:22</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
