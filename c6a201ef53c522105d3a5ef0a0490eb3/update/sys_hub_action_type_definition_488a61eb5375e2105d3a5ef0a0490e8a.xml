@@ -16,7 +16,7 @@
         <flow_priority/>
         <ih_action>false</ih_action>
         <internal_name>create_backstory_prompt</internal_name>
-        <label_cache>[{"name":"{{action.character_name}}","label":"action➛Character Name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"58bb7e0e-e190-4e11-84b1-4f258ac01ec3"}},{"name":"{{action.alignment}}","label":"action➛Alignment","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"bbb925a1-725b-4693-ab06-e5be80262d66"}},{"name":"{{action.character_job}}","label":"action➛Character Job","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"b6a97e04-dd68-4530-aacf-e3dae9580d4d"}},{"name":"{{action.world_name}}","label":"action➛World Name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"e5d6f3ee-bc05-4946-b5a1-43c73aee2e05"}},{"name":"{{step[ebc8b89c-090a-45bf-a5e4-6e9ff30ef81e].prompt}}","label":"step➛Script step➛prompt","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <label_cache>[{"name":"{{action.character_name}}","label":"action➛Character Name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"58bb7e0e-e190-4e11-84b1-4f258ac01ec3"}},{"name":"{{action.alignment}}","label":"action➛Alignment","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"bbb925a1-725b-4693-ab06-e5be80262d66"}},{"name":"{{action.character_job}}","label":"action➛Character Job","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"b6a97e04-dd68-4530-aacf-e3dae9580d4d"}},{"name":"{{action.world_name}}","label":"action➛World Name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"e5d6f3ee-bc05-4946-b5a1-43c73aee2e05"}},{"name":"{{action.sys_id}}","label":"action➛Sys ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.record_id}}","label":"action➛Record ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiUniqueId":"ad001db9-d2df-4d97-8d59-7e0286936921"}},{"name":"{{step[ebc8b89c-090a-45bf-a5e4-6e9ff30ef81e].prompt}}","label":"step➛Script step➛prompt","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
         <master_snapshot>dfff21e353b5e2105d3a5ef0a0490e34</master_snapshot>
         <master_snapshot_digest/>
         <name>Create Backstory Prompt</name>
@@ -31,7 +31,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>488a61eb5375e2105d3a5ef0a0490e8a</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>Create Backstory Prompt</sys_name>
         <sys_overrides/>
         <sys_package display_value="Table Top Tools" source="x_774159_table_t_0">c6a201ef53c522105d3a5ef0a0490eb3</sys_package>
@@ -39,7 +39,7 @@
         <sys_scope display_value="Table Top Tools">c6a201ef53c522105d3a5ef0a0490eb3</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_488a61eb5375e2105d3a5ef0a0490e8a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-04 01:47:55</sys_updated_on>
+        <sys_updated_on>2025-06-13 02:01:17</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -128,10 +128,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-04 01:26:54</sys_created_on>
         <sys_id>b32b292f5375e2105d3a5ef0a0490e42</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope display_value="Table Top Tools">c6a201ef53c522105d3a5ef0a0490eb3</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-04 01:46:51</sys_updated_on>
+        <sys_updated_on>2025-06-13 02:01:11</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=b32b292f5375e2105d3a5ef0a0490e42"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -142,18 +142,19 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-04 01:26:54</sys_created_on>
         <sys_id>7b2b292f5375e2105d3a5ef0a0490e64</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-04 01:46:51</sys_updated_on>
+        <sys_updated_on>2025-06-13 02:01:11</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
 &#13;
 var cn = inputs.name,&#13;
     ca = inputs.alignment.toLowerCase(),&#13;
     cj = inputs.job,&#13;
     cw = inputs.world;&#13;
+    ri = inputs.record_id;&#13;
 &#13;
 &#13;
-var generator = new x_774159_table_t_0.TableTopUtils()._generatePrompt(cn,ca,cj,cw);&#13;
+var generator = new x_774159_table_t_0.TableTopUtils()._generatePrompt(ri,cn,ca,cj,cw);&#13;
 outputs.prompt = generator;&#13;
 })(inputs, outputs);&#13;
 </value>
@@ -259,6 +260,18 @@ outputs.prompt = generator;&#13;
         <value>{{action.character_name}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record_id</field>
+        <id>b32b292f5375e2105d3a5ef0a0490e42</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-13 02:01:11</sys_created_on>
+        <sys_id>f15940e2534e62505d3a5ef0a0490e1e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-13 02:01:11</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_b32b292f5375e2105d3a5ef0a0490e42</table>
+        <value>{{action.record_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>script</field>
         <id>b32b292f5375e2105d3a5ef0a0490e42</id>
         <sys_created_by>admin</sys_created_by>
@@ -285,7 +298,7 @@ outputs.prompt = generator;&#13;
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_b32b292f5375e2105d3a5ef0a0490e42^id=b32b292f5375e2105d3a5ef0a0490e42"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=b32b292f5375e2105d3a5ef0a0490e42"/>
     <sys_translated_text action="delete_multiple" query="documentkey=b32b292f5375e2105d3a5ef0a0490e42"/>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=b32b292f5375e2105d3a5ef0a0490e42^sys_idNOT IN239eed2353b5e2105d3a5ef0a0490e8c,332b292f5375e2105d3a5ef0a0490e5b,639eed2353b5e2105d3a5ef0a0490e87,af9eed2353b5e2105d3a5ef0a0490e89"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=b32b292f5375e2105d3a5ef0a0490e42^sys_idNOT IN239eed2353b5e2105d3a5ef0a0490e8c,332b292f5375e2105d3a5ef0a0490e5b,639eed2353b5e2105d3a5ef0a0490e87,af9eed2353b5e2105d3a5ef0a0490e89,e15900e2534e62505d3a5ef0a0490ef2"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -618,6 +631,89 @@ outputs.prompt = generator;&#13;
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>record_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">b32b292f5375e2105d3a5ef0a0490e42</model>
+        <model_id>b32b292f5375e2105d3a5ef0a0490e42</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_b32b292f5375e2105d3a5ef0a0490e42</name>
+        <next_element/>
+        <order>400</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-13 02:01:10</sys_created_on>
+        <sys_id>e15900e2534e62505d3a5ef0a0490ef2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Table Top Tools">c6a201ef53c522105d3a5ef0a0490eb3</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-13 02:01:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
     <sys_hub_step_ext_output action="delete_multiple" query="model=b32b292f5375e2105d3a5ef0a0490e42^sys_idNOT IN0cfe656353b5e2105d3a5ef0a0490edd"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -726,7 +822,7 @@ outputs.prompt = generator;&#13;
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_hub_action_input action="delete_multiple" query="model=488a61eb5375e2105d3a5ef0a0490e8a^sys_idNOT IN27eaa12f5375e2105d3a5ef0a0490ea3,6feaa12f5375e2105d3a5ef0a0490ea6,6feaadab5375e2105d3a5ef0a0490efa,efeaadab5375e2105d3a5ef0a0490efe"/>
+    <sys_hub_action_input action="delete_multiple" query="model=488a61eb5375e2105d3a5ef0a0490e8a^sys_idNOT IN27eaa12f5375e2105d3a5ef0a0490ea3,6feaa12f5375e2105d3a5ef0a0490ea6,6feaadab5375e2105d3a5ef0a0490efa,b5b8c0a2534e62505d3a5ef0a0490e48,efeaadab5375e2105d3a5ef0a0490efe"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -874,14 +970,14 @@ outputs.prompt = generator;&#13;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-04 01:25:47</sys_created_on>
         <sys_id>6feaa12f5375e2105d3a5ef0a0490ea6</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Table Top Tools">c6a201ef53c522105d3a5ef0a0490eb3</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-04 01:47:53</sys_updated_on>
+        <sys_updated_on>2025-06-13 02:01:15</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -979,6 +1075,90 @@ outputs.prompt = generator;&#13;
         <xml_view>false</xml_view>
     </sys_hub_action_input>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6feaadab5375e2105d3a5ef0a0490efa"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=ad001db9-d2df-4d97-8d59-7e0286936921</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>record_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Record ID</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Backstory Prompt">488a61eb5375e2105d3a5ef0a0490e8a</model>
+        <model_id>488a61eb5375e2105d3a5ef0a0490e8a</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_488a61eb5375e2105d3a5ef0a0490e8a</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-13 01:58:28</sys_created_on>
+        <sys_id>b5b8c0a2534e62505d3a5ef0a0490e48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Table Top Tools">c6a201ef53c522105d3a5ef0a0490eb3</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-13 01:58:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b5b8c0a2534e62505d3a5ef0a0490e48"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1129,14 +1309,14 @@ outputs.prompt = generator;&#13;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-04 01:25:48</sys_created_on>
         <sys_id>6feaa12f5375e2105d3a5ef0a0490ec1</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Table Top Tools">c6a201ef53c522105d3a5ef0a0490eb3</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-04 01:47:53</sys_updated_on>
+        <sys_updated_on>2025-06-13 02:01:15</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1361,6 +1541,29 @@ outputs.prompt = generator;&#13;
         <url_target/>
     </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
+        <element>record_id</element>
+        <help/>
+        <hint/>
+        <label>Record ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_488a61eb5375e2105d3a5ef0a0490e8a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-13 01:58:28</sys_created_on>
+        <sys_id>46b8c0a2534e62505d3a5ef0a0490e4e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Table Top Tools" source="x_774159_table_t_0">c6a201ef53c522105d3a5ef0a0490eb3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Table Top Tools">c6a201ef53c522105d3a5ef0a0490eb3</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-13 01:58:28</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
         <element>alignment</element>
         <help/>
         <hint/>
@@ -1504,17 +1707,17 @@ outputs.prompt = generator;&#13;
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Create Backstory Prompt">488a61eb5375e2105d3a5ef0a0490e8a</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"33ff21e353b5e2105d3a5ef0a0490ecc","name":"plan","plan_signature":null}}</plan>
-        <snapshot>7bff21e353b5e2105d3a5ef0a0490e98</snapshot>
+        <snapshot>9b5980e2534e62505d3a5ef0a0490e3f</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-04 01:47:56</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>33ff21e353b5e2105d3a5ef0a0490ecc</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-04 01:47:56</sys_updated_on>
+        <sys_updated_on>2025-06-13 02:01:18</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -1531,7 +1734,7 @@ outputs.prompt = generator;&#13;
         <description/>
         <flow_priority/>
         <internal_name>create_backstory_prompt</internal_name>
-        <label_cache>[{"name":"{{action.character_name}}","label":"action➛Character Name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"58bb7e0e-e190-4e11-84b1-4f258ac01ec3"}},{"name":"{{action.alignment}}","label":"action➛Alignment","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"bbb925a1-725b-4693-ab06-e5be80262d66"}},{"name":"{{action.character_job}}","label":"action➛Character Job","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"b6a97e04-dd68-4530-aacf-e3dae9580d4d"}},{"name":"{{action.world_name}}","label":"action➛World Name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"e5d6f3ee-bc05-4946-b5a1-43c73aee2e05"}},{"name":"{{step[ebc8b89c-090a-45bf-a5e4-6e9ff30ef81e].prompt}}","label":"step➛Script step➛prompt","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <label_cache>[{"name":"{{action.character_name}}","label":"action➛Character Name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"58bb7e0e-e190-4e11-84b1-4f258ac01ec3"}},{"name":"{{action.alignment}}","label":"action➛Alignment","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"bbb925a1-725b-4693-ab06-e5be80262d66"}},{"name":"{{action.character_job}}","label":"action➛Character Job","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"b6a97e04-dd68-4530-aacf-e3dae9580d4d"}},{"name":"{{action.world_name}}","label":"action➛World Name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"e5d6f3ee-bc05-4946-b5a1-43c73aee2e05"}},{"name":"{{action.sys_id}}","label":"action➛Sys ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.record_id}}","label":"action➛Record ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiUniqueId":"ad001db9-d2df-4d97-8d59-7e0286936921"}},{"name":"{{step[ebc8b89c-090a-45bf-a5e4-6e9ff30ef81e].prompt}}","label":"step➛Script step➛prompt","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
         <master>true</master>
         <name>Create Backstory Prompt</name>
         <natlang/>
@@ -1544,7 +1747,7 @@ outputs.prompt = generator;&#13;
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>dfff21e353b5e2105d3a5ef0a0490e34</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1552,7 +1755,7 @@ outputs.prompt = generator;&#13;
         <sys_scope display_value="Table Top Tools">c6a201ef53c522105d3a5ef0a0490eb3</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-04 01:47:54</sys_updated_on>
+        <sys_updated_on>2025-06-13 02:01:16</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -1641,10 +1844,10 @@ outputs.prompt = generator;&#13;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-04 01:47:54</sys_created_on>
         <sys_id>2bff21e353b5e2105d3a5ef0a0490e59</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="Table Top Tools">c6a201ef53c522105d3a5ef0a0490eb3</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-04 01:47:55</sys_updated_on>
+        <sys_updated_on>2025-06-13 02:01:17</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=2bff21e353b5e2105d3a5ef0a0490e59"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1669,18 +1872,19 @@ outputs.prompt = generator;&#13;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-04 01:47:55</sys_created_on>
         <sys_id>efff21e353b5e2105d3a5ef0a0490e80</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-04 01:47:55</sys_updated_on>
+        <sys_updated_on>2025-06-13 02:01:17</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
 &#13;
 var cn = inputs.name,&#13;
     ca = inputs.alignment.toLowerCase(),&#13;
     cj = inputs.job,&#13;
     cw = inputs.world;&#13;
+    ri = inputs.record_id;&#13;
 &#13;
 &#13;
-var generator = new x_774159_table_t_0.TableTopUtils()._generatePrompt(cn,ca,cj,cw);&#13;
+var generator = new x_774159_table_t_0.TableTopUtils()._generatePrompt(ri,cn,ca,cj,cw);&#13;
 outputs.prompt = generator;&#13;
 })(inputs, outputs);&#13;
 </value>
@@ -1736,6 +1940,18 @@ outputs.prompt = generator;&#13;
         <value>{{action.character_name}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record_id</field>
+        <id>2bff21e353b5e2105d3a5ef0a0490e59</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-13 02:01:17</sys_created_on>
+        <sys_id>1b5980e2534e62505d3a5ef0a0490e31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-13 02:01:17</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_2bff21e353b5e2105d3a5ef0a0490e59</table>
+        <value>{{action.record_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>script</field>
         <id>2bff21e353b5e2105d3a5ef0a0490e59</id>
         <sys_created_by>admin</sys_created_by>
@@ -1762,7 +1978,7 @@ outputs.prompt = generator;&#13;
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_2bff21e353b5e2105d3a5ef0a0490e59^id=2bff21e353b5e2105d3a5ef0a0490e59"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=2bff21e353b5e2105d3a5ef0a0490e59"/>
     <sys_translated_text action="delete_multiple" query="documentkey=2bff21e353b5e2105d3a5ef0a0490e59"/>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=2bff21e353b5e2105d3a5ef0a0490e59^sys_idNOT IN2bff21e353b5e2105d3a5ef0a0490e73,67ff21e353b5e2105d3a5ef0a0490e5d,e7ff21e353b5e2105d3a5ef0a0490e70,efff21e353b5e2105d3a5ef0a0490e60"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=2bff21e353b5e2105d3a5ef0a0490e59^sys_idNOT IN2bff21e353b5e2105d3a5ef0a0490e73,475980e2534e62505d3a5ef0a0490e19,67ff21e353b5e2105d3a5ef0a0490e5d,e7ff21e353b5e2105d3a5ef0a0490e70,efff21e353b5e2105d3a5ef0a0490e60"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1834,6 +2050,89 @@ outputs.prompt = generator;&#13;
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-06-04 01:47:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>record_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>record_id</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">2bff21e353b5e2105d3a5ef0a0490e59</model>
+        <model_id>2bff21e353b5e2105d3a5ef0a0490e59</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_2bff21e353b5e2105d3a5ef0a0490e59</name>
+        <next_element/>
+        <order>400</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-13 02:01:16</sys_created_on>
+        <sys_id>475980e2534e62505d3a5ef0a0490e19</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Table Top Tools">c6a201ef53c522105d3a5ef0a0490eb3</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-13 02:01:16</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2203,7 +2502,7 @@ outputs.prompt = generator;&#13;
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_hub_action_input action="delete_multiple" query="model=dfff21e353b5e2105d3a5ef0a0490e34^sys_idNOT IN23ff21e353b5e2105d3a5ef0a0490e50,27ff21e353b5e2105d3a5ef0a0490e4c,2bff21e353b5e2105d3a5ef0a0490e48,ebff21e353b5e2105d3a5ef0a0490e37"/>
+    <sys_hub_action_input action="delete_multiple" query="model=dfff21e353b5e2105d3a5ef0a0490e34^sys_idNOT IN23ff21e353b5e2105d3a5ef0a0490e50,27ff21e353b5e2105d3a5ef0a0490e4c,2bff21e353b5e2105d3a5ef0a0490e48,435980e2534e62505d3a5ef0a0490e08,ebff21e353b5e2105d3a5ef0a0490e37"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -2267,14 +2566,14 @@ outputs.prompt = generator;&#13;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-04 01:47:54</sys_created_on>
         <sys_id>23ff21e353b5e2105d3a5ef0a0490e50</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Table Top Tools">c6a201ef53c522105d3a5ef0a0490eb3</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-04 01:47:54</sys_updated_on>
+        <sys_updated_on>2025-06-13 02:01:16</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2456,6 +2755,90 @@ outputs.prompt = generator;&#13;
         <xml_view>false</xml_view>
     </sys_hub_action_input>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2bff21e353b5e2105d3a5ef0a0490e48"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=ad001db9-d2df-4d97-8d59-7e0286936921</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>record_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Record ID</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Backstory Prompt">dfff21e353b5e2105d3a5ef0a0490e34</model>
+        <model_id>dfff21e353b5e2105d3a5ef0a0490e34</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_dfff21e353b5e2105d3a5ef0a0490e34</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-13 02:01:16</sys_created_on>
+        <sys_id>435980e2534e62505d3a5ef0a0490e08</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Table Top Tools">c6a201ef53c522105d3a5ef0a0490eb3</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-13 02:01:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=435980e2534e62505d3a5ef0a0490e08"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -2693,14 +3076,14 @@ outputs.prompt = generator;&#13;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-04 01:47:55</sys_created_on>
         <sys_id>afff21e353b5e2105d3a5ef0a0490e8c</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Table Top Tools">c6a201ef53c522105d3a5ef0a0490eb3</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-04 01:47:55</sys_updated_on>
+        <sys_updated_on>2025-06-13 02:01:17</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2814,6 +3197,29 @@ outputs.prompt = generator;&#13;
         <sys_updated_on>2025-06-04 01:47:55</sys_updated_on>
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=b7ff21e353b5e2105d3a5ef0a0490e98"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>record_id</element>
+        <help/>
+        <hint/>
+        <label>Record ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_dfff21e353b5e2105d3a5ef0a0490e34</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-13 02:01:16</sys_created_on>
+        <sys_id>035980e2534e62505d3a5ef0a0490e0b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Table Top Tools" source="x_774159_table_t_0">c6a201ef53c522105d3a5ef0a0490eb3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Table Top Tools">c6a201ef53c522105d3a5ef0a0490eb3</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-13 02:01:16</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>character_name</element>
         <help/>

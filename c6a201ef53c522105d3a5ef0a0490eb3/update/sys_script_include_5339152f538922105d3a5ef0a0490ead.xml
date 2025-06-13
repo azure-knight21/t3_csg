@@ -467,11 +467,11 @@ TableTopUtils.prototype = {
     },
 
 
-    _generatePrompt: function(charName, charAlign, charJob, charWorld) {
-        var chrGender = this._getGender();
-        var chrRace = this._getRace();
+    _generatePrompt: function(sysId,charName, charAlign, charJob, charWorld) {
+        var chrGender = this._getGender(sysId);
+        var chrRace = this._getRace(sysId);
         
-		var prompt = "Generate a backstory about a " + charAlign + " " + charJob + " named " + charName + " that resides in the world of " + charWorld + " that is no more 250 characters that is clear and concise, yet creative and fantasy based.";
+		var prompt = "Generate a fantasy backstory no more than 100 words for a" +charAlign +" "+ chrRace+" "+chrGender+" " +charJob+" named " + charName+", who resides in the world of " +charWorld+". The story should be clear, concise, and creatively rooted in fantasy.";
         return prompt;
     },
     type: 'TableTopUtils'
@@ -480,13 +480,13 @@ TableTopUtils.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-04-27 17:24:38</sys_created_on>
         <sys_id>5339152f538922105d3a5ef0a0490ead</sys_id>
-        <sys_mod_count>117</sys_mod_count>
+        <sys_mod_count>120</sys_mod_count>
         <sys_name>TableTopUtils</sys_name>
         <sys_package display_value="Table Top Tools" source="x_774159_table_t_0">c6a201ef53c522105d3a5ef0a0490eb3</sys_package>
         <sys_policy/>
         <sys_scope display_value="Table Top Tools">c6a201ef53c522105d3a5ef0a0490eb3</sys_scope>
         <sys_update_name>sys_script_include_5339152f538922105d3a5ef0a0490ead</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-11 01:47:23</sys_updated_on>
+        <sys_updated_on>2025-06-13 02:56:10</sys_updated_on>
     </sys_script_include>
 </record_update>
